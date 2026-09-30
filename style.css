@@ -1,0 +1,667 @@
+/* ----
+Para o body, usaremos a paleta de cores
+GAME da JojoWiki.
+---- */
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url('JoJo-Pattern.jpg');
+    background-repeat: repeat;
+}
+
+body a{
+    text-decoration: none;
+}
+
+p {
+    /* Dá um espaço no início dos parágrafos */
+    text-indent: 25px;
+}
+
+header img{ 
+    max-width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+.cabeça0{
+    display: flex;
+    justify-content: center;
+    background-color: #870089;
+}
+
+.cabeça1{
+    display: flex;
+    justify-content: center;
+    background-color: #111B2F;
+}
+
+.cabeça2{
+    display: flex;
+    justify-content: center;
+    background-color: #711E3F;
+}
+
+.cabeça3{
+    display: flex;
+    justify-content: center;
+    background-color: #2D2854;
+}
+
+.cabeça4{
+    display: flex;
+    justify-content: center;
+    background-color: #31577A;
+}
+
+.cabeça5{
+    display: flex;
+    justify-content: center;
+    background-color: #801B5F;
+}
+
+.cabeça6{
+    display: flex;
+    justify-content: center;
+    background-color: #1A5A6B;
+}
+
+/* ================================
+   NAV
+================================ */
+
+nav{
+    position: sticky;
+    top: 0;
+    padding-bottom: 7px;
+    z-index: 100;
+}
+#nav0{
+    border-top: 2px solid #000000;
+}
+#nav1{
+    border-top: 4px solid #49485E;
+}
+#nav2{
+    border-top: 4px solid #915D19;
+}
+#nav3{
+    border-top: 4px solid #5C5330;
+}
+#nav4{
+    border-top: 4px solid #AD5862;
+}
+#nav5{
+    border-top: 4px solid #8E7C32;
+}
+#nav6{
+    border-top: 4px solid #3B5432;
+}
+
+#font0{
+    background-color: #870089;
+    color: #ece116;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font1{
+    background-color: #111B2F;
+    color: #ADACBC;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font2{
+    background-color: #711E3F;
+    color: #DF9330;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font3{
+    background-color: #2D2854;
+    color: #B7A972;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font4{
+    background-color: #31577A;
+    color: #F599A3;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font5{
+    background-color: #801B5F;
+    color: #D4BA50;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font6{
+    background-color: #1A5A6B;
+    color: #8FAC84;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* ================================
+   FLEX DA NAV
+================================ */
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    /* Permite rolagem horizontal */
+    overflow-x: auto;
+
+    gap: 10px;
+
+    /* Impede que a barra aumente de tamanho */
+    width: 100%;
+}
+
+#nav0{
+    background: linear-gradient(to top, transparent, #870089);
+}
+
+#nav1{
+    background: linear-gradient(to top, transparent, #111B2F);
+}
+
+#nav2{
+    background: linear-gradient(to top, transparent, #711E3F);
+}
+
+#nav3{
+    background: linear-gradient(to top, transparent, #2D2854);
+}
+
+#nav4{
+    background: linear-gradient(to top, transparent, #31577A);
+}
+
+#nav5{
+    background: linear-gradient(to top, transparent, #801B5F);
+}
+
+#nav6{
+    background: linear-gradient(to top, transparent, #1A5A6B);
+}
+
+.flex a{
+    display: inline-block;
+
+    padding: 7px;
+    margin: 7px;
+
+    border-radius: 8px;
+
+    color: #414D68;
+    background-color: #D3D3AF;
+
+    /* Impede que o texto quebre */
+    white-space: nowrap;
+
+    /* Impede seleção */
+    user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ================================
+   HOVER
+================================ */
+
+.hov a:hover{
+    transition: transform 0.4s ease,
+                color 0.4s ease,
+                background-color 0.4s ease;
+
+    transform: scale(1.15) translateY(-3px);
+    font-weight: bold;
+}
+
+.hov a{
+    transition: transform 0.2s ease,
+                color 0.2s ease,
+                background-color 0.2s ease;
+}
+
+/* Cores dos botões */
+
+.home:hover{
+    color: #D3D3AF;
+    background-color: #414D68;
+}
+
+.pt1:hover{
+    color: #ADACBC;
+    background-color: #3055A1;
+}
+
+.pt2:hover{
+    color: #DF9330;
+    background-color: #952F58;
+}
+
+.pt3:hover{
+    color: #B7A972;
+    background-color: #57508F;
+}
+
+.pt4:hover{
+    color: #F599A3;
+    background-color: #5E8CB8;
+}
+
+.pt5:hover{
+    color: #D4BA50;
+    background-color: #E15FB6;
+}
+
+.pt6:hover{
+    color: #8FAC84;
+    background-color: #2F93AD;
+}
+
+/* ================================
+   CAIXAS DE TEXTO
+================================ */
+
+#secful0{
+    padding: 10px;
+    background: rgba(255, 252, 156, 0.8);
+    margin: 15px 60px 35px 60px;
+    border-radius: 20px;
+}
+
+#secful1{
+    padding: 10px;
+    background: rgba(173, 172, 188, 0.8);
+    margin: 15px 60px 35px 60px;
+    border-radius: 20px;
+}
+
+#secful2{
+    padding: 10px;
+    background: rgba(223, 147, 48, 0.8);
+    margin: 15px 60px 35px 60px;
+    border-radius: 20px;
+}
+
+#secful3{
+    padding: 10px;
+    background: rgba(183, 169, 114, 0.8);
+    margin: 15px 60px 35px 60px;
+    border-radius: 20px;
+}
+
+#secful4{
+    padding: 10px;
+    background: rgba(245, 153, 163, 0.8);
+    margin: 15px 60px 35px 60px;
+    border-radius: 20px;
+}
+
+#secful5{
+    padding: 10px;
+    background: rgba(212, 186, 80, 0.8);
+    margin: 15px 60px 35px 60px;
+    border-radius: 20px;
+}
+
+#secful6{
+    padding: 10px;
+    background: rgba(143, 172, 132, 0.8);
+    margin: 15px 60px 35px 60px;
+    border-radius: 20px;
+}
+
+/* ================================
+   LOGO
+================================ */
+
+.logo{
+    width: auto;
+    height: 50px;
+}
+.logo0{
+    width: auto;
+    height: 90px;
+}
+
+/* ================================
+   SECTIONS
+================================ */
+
+section{
+    transition: transform 0.3s ease;
+}
+
+section:hover{
+    transform: translate(0, -9px);
+}
+
+
+
+
+@media (min-width: 600px){
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    background-image: url('JoJo-Pattern.jpg');
+    background-repeat: repeat;
+}
+
+body a{
+    text-decoration: none;
+}
+
+p {
+    /* Dá um espaço no início dos parágrafos */
+    text-indent: 25px;
+}
+
+header img{ 
+    max-width: 150px;
+    max-height: auto;
+    padding: 10px;
+}
+
+/* As próximas classes são para cada parte do cabeçalho, cada uma com sua cor. */
+.cabeça0{
+    display: flex;
+    justify-content: center;
+    background-color: #870089;
+}
+
+.cabeça1{
+    display: flex;
+    justify-content: center;
+    background-color: #111B2F;
+}
+
+.cabeça2{
+    display: flex;
+    justify-content: center;
+    background-color: #711E3F;
+}
+
+.cabeça3{
+    display: flex;
+    justify-content: center;
+    background-color: #2D2854;
+}
+
+.cabeça4{
+    display: flex;
+    justify-content: center;
+    background-color: #31577A;
+}
+
+.cabeça5{
+    display: flex;
+    justify-content: center;
+    background-color: #801B5F;
+}
+
+.cabeça6{
+    display: flex;
+    justify-content: center;
+    background-color: #1A5A6B;
+}
+
+nav{
+    /* Gruda no topo */
+    position: sticky;
+    top: 0;
+    padding-bottom: 7px;
+}
+
+#font0{
+    /* Aparencia */
+    background-color: #870089;
+    color: #ece116;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font1{
+    /* Aparencia */
+    background-color: #111B2F;
+    color: #ADACBC;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font2{
+    /* Aparencia */
+    background-color: #711E3F;
+    color: #DF9330;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font3{
+    /* Aparencia */
+    background-color: #2D2854;
+    color: #B7A972;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font4{
+    /* Aparencia */
+    background-color: #31577A;
+    color: #F599A3;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font5{
+    /* Aparencia */
+    background-color: #801B5F;
+    color: #D4BA50;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#font6{
+    /* Aparencia */
+    background-color: #1A5A6B;
+    color: #8FAC84;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.flex{
+    /* A flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* Over. vai deixar como rolamento */
+    overflow-x: auto;
+    /* Gap dá espaço */
+    gap: 10px;
+
+}
+
+.flex a{
+    /* Flexbox para tranformar em "caixas" */
+    display: Inline-block;
+    /* Aparencia */
+    padding: 7px;
+    margin: 7px;
+    border-radius: 8px;
+    color: #414D68;
+    background-color: #D3D3AF;
+    /* Anula a quebra de linha */
+    white-space: nowrap;
+    /* Anula a seleção do usuário */
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.hov a:hover{
+    /* Efeito ao passar o musse por cima */
+    transition: transform 0.4s ease, color 0.4s ease, background-color 0.4s ease;
+    transform: scale(1.15) translateY(-3px);
+    font-weight: bold;
+}
+
+.hov a{
+    transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease
+}
+
+/* As próximas linhas farão com que cada botão tenha efeito diferente. */
+.home:hover{
+    color: #D3D3AF;
+    background-color: #414D68;
+}
+
+.pt1:hover{
+    color: #ADACBC;
+    background-color: #3055A1;
+}
+
+.pt2:hover{
+    color: #DF9330;
+    background-color: #952F58;
+}
+
+.pt3:hover{
+    color: #B7A972;
+    background-color: #57508F;
+}
+
+.pt4:hover{
+    color: #F599A3;
+    background-color: #5E8CB8;
+}
+
+.pt5:hover{
+    color: #D4BA50;
+    background-color: #E15FB6;
+}
+
+.pt6:hover{
+    color: #8FAC84;
+    background-color: #2F93AD;
+}
+
+/*-------------------------------------*/
+
+/* To colocando varios p mudar a caixa con os textos em cada parte*/
+
+#secful0{
+/* media quare */
+padding: 10px;
+background: rgba(255, 252, 156, 0.8);
+margin-top: 15px;
+margin-bottom: 35px;
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 20px;
+}
+
+#secful1{
+/* media quare */
+padding: 10px;
+background: rgba(173, 172, 188, 0.8);
+margin-top: 15px;
+margin-bottom: 35px;
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 20px;
+}
+
+#secful2{
+/* media quare */
+padding: 10px;
+background: rgb(223, 147, 48, 0.8);
+margin-top: 15px;
+margin-bottom: 35px;
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 20px;
+}
+
+#secful3{
+/* media quare */
+padding: 10px;
+background: rgb(183, 169, 114, 0.8);
+margin-top: 15px;
+margin-bottom: 35px;
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 20px;
+}
+
+#secful4{
+/* media quare */
+padding: 10px;
+background: rgb(245, 153, 163, 0.8);
+margin-top: 15px;
+margin-bottom: 35px;
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 20px;
+}
+
+#secful5{
+/* media quare */
+padding: 10px;
+background: rgb(212, 186, 80, 0.8);
+margin-top: 15px;
+margin-bottom: 35px;
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 20px;
+}
+
+#secful6{
+/* media quare */
+padding: 10px;
+background: rgb(143, 172, 132, 0.8);
+margin-top: 15px;
+margin-bottom: 35px;
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 20px;
+}
+}
